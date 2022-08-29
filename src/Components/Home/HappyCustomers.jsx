@@ -1,5 +1,5 @@
 import {
-    Flex, Image, Heading, Box
+    Flex, Image, Heading, Box, SimpleGrid
 } from "@chakra-ui/react"
 import MidHeadingText from '../Common/MidHeadingText'
 
@@ -28,11 +28,11 @@ const HappyCustomers = () => {
     }
     return (
         <>
-            <Box bgColor={'#2f5bbf'} mt={'6rem'} pt={'10rem'} pb={'5rem'}>
+            <Box bgColor={'#2f5bbf'} mt={'6rem'} py={'5rem'} >
                 <Heading mb={'2.5rem'} color={'white'} fontSize={'2xl'} as={'h4'} textAlign={'center'}>HAPPY CUSTOMERS SHARE GREAT REVIEWS ON G2</Heading>
-                <Flex justifyContent={'space-evenly'} m={'auto'} w={'90%'}>
+                <SimpleGrid columns={[2, 4, 6, 10]} justifyContent={'space-evenly'} alignItems={'center'} m={'auto'} w={'90%'}>
                     {customer}
-                </Flex>
+                </SimpleGrid>
             </Box>
             <MidHeadingText heading={DataMidHeadingText.heading} text={DataMidHeadingText.text} />
         </>
