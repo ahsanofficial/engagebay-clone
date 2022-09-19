@@ -9,8 +9,7 @@ function App() {
     //   <Heading size='2xl'>details</Heading>
     //   <Text>ahsan</Text>
     // </Container>
-    <AllRoutes/>
+    <AllRoutes />
   );
 }
-
 export default App;
