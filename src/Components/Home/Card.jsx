@@ -7,6 +7,8 @@ import {
 } from "@chakra-ui/react"
 import TickLogo1 from "../Common/TickLogo1"
 import Buttons from "../Common/Buttons"
+import styled from "./Card.module.css"
+
 const Card = ({ heading, text, image, lowerHeading, ticksText }) => {
     const ticksData = []
 
@@ -24,7 +26,7 @@ const Card = ({ heading, text, image, lowerHeading, ticksText }) => {
                         <Heading size='md' >{heading}</Heading>
                         <Text fontSize='md' mt={'20px'} color='#677294'>{text}</Text>
                     </Box>
-                    <Image h='125px' w='125px' src={image} />
+                    <Image className={styled.img} src={image} />
                 </HStack>
 
                 <Heading size='sm' mt={'2rem'} mb={'1.5rem'}>{lowerHeading}</Heading>

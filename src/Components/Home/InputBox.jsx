@@ -1,10 +1,11 @@
-import { InputGroup, Input, InputRightElement, Button,} from "@chakra-ui/react"
+import { InputGroup, Input, InputRightElement, Button, } from "@chakra-ui/react"
+import styled from './InputBox.module.css'
 
 const InputBox = () => {
     return (
         <>
-            <InputGroup
-                borderRadius={'50px'} size='xl' w={'450px'} m={'auto'} mt={'3rem'} lineHeight={'70px'}  >
+            <InputGroup className={styled.main}
+                borderRadius={'50px'} size='xl' m={'auto'} mt={'3rem'} lineHeight={'70px'}  >
                 <Input
                     focusBorderColor={'orange.500'}
                     borderColor={'orange.500'}

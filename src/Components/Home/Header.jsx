@@ -1,12 +1,14 @@
 import { Image, HStack, Box, Heading, Text } from "@chakra-ui/react"
 import InputBox from './InputBox'
+import styled from './Header.module.css'
+
 const Header = () => {
     return (
         <Box>
-            <Heading textAlign={'center'} mx={'8rem'} pt={'5rem'} lineHeight={'5rem'} size='4xl'>Market better. Sell faster. Support smarter</Heading>
+            <Heading className={styled.heading} textAlign={'center'} mx={'8rem'} pt={'5rem'}>Market better. Sell faster. Support smarter</Heading>
             <Text textAlign={'center'} my={'1rem'} fontSize='3xl'>One platform for all your Marketing, Sales, and Support teams</Text>
             <InputBox />
-            <HStack gap={'10px'} m={'auto'} mt={'2rem'} w={'380px'} >
+            <Box className={styled.main} gap={'10px'} m={'auto'} mt={'2rem'} w={'380px'} >
                 <HStack m={'auto'} >
                     <Box h={'20px'} w={'20px'}>
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="check-circle-solid" role="img" viewBox="0 0 512 512">
@@ -23,7 +25,7 @@ const Header = () => {
                     </Box>
                     <Text>No credit card required</Text>
                 </HStack>
-            </HStack>
+            </Box>
             <Image mt={'1rem'} src='https://cdn5.engagebay.com/new/assets/img/banner-image.svg' />
         </Box>
     )

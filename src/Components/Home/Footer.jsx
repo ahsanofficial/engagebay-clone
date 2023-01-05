@@ -82,7 +82,7 @@ const Footer = () => {
             ))
           }
         </Flex>
-        <HStack gap={'4rem'} px={'4rem'} py={'2rem'}>
+        <Flex gap={'4rem'} px={'4rem'} py={'2rem'} flexWrap={'wrap'}>
           <Box>
             <Image h={'30px'} w={'200px'} src='https://cdn5.engagebay.com/new/assets/img/engagebay-logo-white.svg' />
             <Text pt={'0.7rem'}>One platform for all your Marketing, Sales, and Support teams.</Text>
@@ -98,7 +98,7 @@ const Footer = () => {
             <Text>support@engagebay.com , +1.(877).509.3570</Text>
             <Text>© EngageBay 2022. All Rights Reserved.</Text>
           </Box>
-        </HStack>
+        </Flex>
       </Box>
     </>
   )

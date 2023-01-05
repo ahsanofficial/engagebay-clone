@@ -1,0 +1,13 @@
+.main{
+ width: 450px;   
+}
+@media only screen and (max-width:500px) {
+    .main{
+       width: 350px;   
+    }
+}
+@media only screen and (max-width:400px) {
+    .main{
+       width: 250px;   
+    }
+}
